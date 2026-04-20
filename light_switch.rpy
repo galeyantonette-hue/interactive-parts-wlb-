@@ -7,9 +7,9 @@ screen light_switch():
 
     if switch_on:
 
-        # 🔼 FIRST STATE (ON)
+        # ON (UNA)
         imagebutton:
-            xpos 800
+            xpos 550
             ypos 300
 
             idle "on.png"
@@ -19,10 +19,10 @@ screen light_switch():
 
     else:
 
-        # 🔽 SECOND STATE (OFF)
+        # OFF
         imagebutton:
-            xpos 803
-            ypos 283
+            xpos 553
+            ypos 300
 
             idle "off.png"
             hover "off.png"
