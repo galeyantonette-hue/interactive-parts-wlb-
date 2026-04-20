@@ -1,4 +1,4 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
@@ -131,7 +131,7 @@ label movie:
     hide kid3
 
     m "Look, I think we can move these boards to go to their backyard." 
-    
+
     call screen fence_minigame
 
     scene backyard-morning
@@ -497,7 +497,6 @@ label board:
 
     call screen investigation_board
 
-    scene empty_board
     pause
 
     scene black-screen
@@ -718,8 +717,6 @@ label fb_glitch:
     hide charles
     
     "{i}You wanted to bury my future, so I decided to bury yours instead.{/i}"
-
-    with fade
 
     call screen basement_puzzle
 
