@@ -25,11 +25,11 @@ screen basement_puzzle():
 
     # SHOVEL
     imagebutton:
-        idle Transform("shovel2.png", zoom=0.30, rotate=-6)
-        hover Transform("shovel2.png", zoom=0.32, rotate=-6)
+        idle Transform("shovel2.png", zoom=0.17, rotate=-2)
+        hover Transform("shovel2.png", zoom=0.18, rotate=-2)
 
-        xpos 320
-        ypos 520
+        xpos 234 # left - decrease; right - increase
+        ypos 378 # taas - decrease; baba - increase
 
         action NullAction()
 
@@ -38,11 +38,11 @@ screen basement_puzzle():
 
     # HAMMER
     imagebutton:
-        idle Transform("hammer2.png", zoom=0.20, rotate=2)
-        hover Transform("hammer2.png", zoom=0.22, rotate=2)
+        idle Transform("hammer2.png", zoom=0.15, rotate=15)
+        hover Transform("hammer2.png", zoom=0.16, rotate=15)
 
-        xpos 1200
-        ypos 730
+        xpos 900 # left - decrease; right - increase
+        ypos 530 # taas - decrease; baba - increase
 
         action NullAction()
 
@@ -51,11 +51,11 @@ screen basement_puzzle():
 
     # CROWBAR
     imagebutton:
-        idle Transform("crowbar2.png", zoom=0.42, rotate=1)
-        hover Transform("crowbar2.png", zoom=0.44, rotate=1)
+        idle Transform("crowbar2.png", zoom=0.22, rotate=1)
+        hover Transform("crowbar2.png", zoom=0.23, rotate=1)
 
-        xpos 500
-        ypos 380
+        xpos 388 # left - decrease; right - increase
+        ypos 298 # taas - decrease; baba - increase
 
         action Return("crowbar")
 
