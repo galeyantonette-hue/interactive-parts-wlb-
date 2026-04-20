@@ -36,38 +36,38 @@ screen fence_minigame():
 )
 
     add Transform(
-        "fence.png",
-        xalign=0.5,
-        yalign=0.5,
-        zoom=2,
-        yoffset=318,
-        xoffset=813
+    "fence.png",
+    xalign=0.5,
+    yalign=0.5,
+    zoom=1,
+    yoffset=243,
+    xoffset=473
     )
 
     add Transform(
     "fence_bg.png",
     xalign=0.5,
     yalign=0.5,
-    zoom=2,
-    yoffset=330
+    zoom=1,
+    yoffset=250
     )
 
     add Transform(
     "fence.png",
     xalign=0.5,
     yalign=0.5,
-    zoom=2,
-    yoffset=318,
-    xoffset=-820
+    zoom=1,
+    yoffset=240,
+    xoffset=-470
     )
 
     # BOARD 1
     if not board1_removed:
         drag:
             drag_name "board1"
-            child Transform("board1.png", zoom=2)
-            xpos 880
-            ypos 680
+            child Transform("board1.png", zoom=1)
+            xpos 595
+            ypos 515
             draggable True
             droppable False
             dragged board1_dragged
@@ -76,13 +76,13 @@ screen fence_minigame():
     if not board2_removed:
         drag:
             drag_name "board2"
-            child Transform("board2.png", zoom=2)
-            xpos 1000
-            ypos 680
+            child Transform("board2.png", zoom=1)
+            xpos 665
+            ypos 515
             draggable True
             droppable False
             dragged board2_dragged
 
-    # ✅ THIS MAKES IT EXIT PROPERLY
+    # exit part mag work ka ples
     if fence_solved:
         timer 0.5 action Return(True)
